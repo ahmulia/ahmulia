@@ -182,8 +182,13 @@ function soundGo () {
 background_sound.play();
 document.body.appendChild(soundOn)
 }
+function stopTicking () {
+   lastsec.pause();
+}
+
 refreshBtn.addEventListener('click', initGame);
 refreshBtn.addEventListener('click', greyOutBtn);
+refreshBtn.addEventListener('click', stopTicking();
 checkBtn.addEventListener('click', checkWord);
 
 
